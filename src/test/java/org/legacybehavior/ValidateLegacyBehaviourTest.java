@@ -42,12 +42,12 @@ public class ValidateLegacyBehaviourTest {
     }
 
     private Person getNewSystemResponse() {
-        return Person.getInstance("Carol Danvers", "Captain Marvel", "MCU", UUID.randomUUID(), Instant.now().minusSeconds(360));
+        return Person.getInstance("Carol Danvers", "Captain Marvel", "MCU");
     }
 
 
     private Person getExistingSystemResponse() {
-        return Person.getInstance("Carol Danvers", "Captain Marvel", "MCU", UUID.randomUUID(), Instant.now());
+        return Person.getInstance("Carol Danvers", "Captain Marvel", "MCU");
     }
 
     public static class CustomApprovals extends JsonApprovals{

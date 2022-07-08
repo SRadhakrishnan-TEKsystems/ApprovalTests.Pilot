@@ -45,7 +45,7 @@ public class SampleTests
 
   @Test
   public void testJsonApprovals() {
-    Person hero = Person.getInstance("Tony Stark", "Iron Man", null,null, null);
+    Person hero = Person.getInstance("Tony Stark", "Iron Man", null);
     JsonApprovals.verifyAsJson(hero, GsonBuilder::serializeNulls);
   }
 
